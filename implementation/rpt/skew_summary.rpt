@@ -1,0 +1,106 @@
+Clock tree timing engine global stage delay update for SS:setup.early...
+Clock tree timing engine global stage delay update for SS:setup.early done. (took cpu=0:00:00.2 real=0:00:00.2)
+Clock tree timing engine global stage delay update for SS:setup.late...
+Clock tree timing engine global stage delay update for SS:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for FF:hold.early...
+Clock tree timing engine global stage delay update for FF:hold.early done. (took cpu=0:00:00.2 real=0:00:00.2)
+Clock tree timing engine global stage delay update for FF:hold.late...
+Clock tree timing engine global stage delay update for FF:hold.late done. (took cpu=0:00:00.1 real=0:00:00.1)
+
+Skew Group Structure:
+=====================
+
+-----------------------------------------------------------------
+Skew Group    Sources    Constrained Sinks    Unconstrained Sinks
+-----------------------------------------------------------------
+clk/SDC          1             2070                    0
+-----------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner     Skew Group    ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+SS:setup.early    clk/SDC           -        0.858     0.974     0.913        0.029       ignored                  -         0.116              -
+SS:setup.late     clk/SDC       none         0.858     1.299     0.918        0.048       auto computed        0.447         0.441    100% {0.858, 1.299}
+FF:hold.early     clk/SDC           -        0.388     0.457     0.422        0.015       ignored                  -         0.068              -
+FF:hold.late      clk/SDC           -        0.388     0.457     0.422        0.015       ignored                  -         0.068              -
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+--------------------------------------------------------------------
+Timing Corner     Skew Group    Min ID    PathID    Max ID    PathID
+--------------------------------------------------------------------
+SS:setup.early    clk/SDC       0.858       -       0.974       -
+-    min fma_inst/regm3/out_reg[137]/CLK
+-    max fma_inst/regm0/out_reg[97]/CLK
+SS:setup.late     clk/SDC       0.858       -       1.299       -
+-    min fma_inst/regm3/out_reg[137]/CLK
+-    max fma_inst/regm/out_reg[3]/CLK
+FF:hold.early     clk/SDC       0.388       -       0.457       -
+-    min in/data_reg_reg[64]/CLK
+-    max fma_inst/regm0/out_reg[104]/CLK
+FF:hold.late      clk/SDC       0.388       -       0.457       -
+-    min in/data_reg_reg[64]/CLK
+-    max fma_inst/regm0/out_reg[104]/CLK
+--------------------------------------------------------------------
+
+
+Clock tree timing engine global stage delay update for SS:setup.early...
+Clock tree timing engine global stage delay update for SS:setup.early done. (took cpu=0:00:00.3 real=0:00:00.1)
+Clock tree timing engine global stage delay update for SS:setup.late...
+Clock tree timing engine global stage delay update for SS:setup.late done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for FF:hold.early...
+Clock tree timing engine global stage delay update for FF:hold.early done. (took cpu=0:00:00.1 real=0:00:00.0)
+Clock tree timing engine global stage delay update for FF:hold.late...
+Clock tree timing engine global stage delay update for FF:hold.late done. (took cpu=0:00:00.1 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+-----------------------------------------------------------------
+Skew Group    Sources    Constrained Sinks    Unconstrained Sinks
+-----------------------------------------------------------------
+clk/SDC          1             2070                    0
+-----------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner     Skew Group    ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+SS:setup.early    clk/SDC           -        0.858     0.974     0.913        0.029       ignored                  -         0.116              -
+SS:setup.late     clk/SDC       none         0.858     1.299     0.918        0.048       auto computed        0.447         0.441    100% {0.858, 1.299}
+FF:hold.early     clk/SDC           -        0.388     0.457     0.422        0.015       ignored                  -         0.068              -
+FF:hold.late      clk/SDC           -        0.388     0.457     0.422        0.015       ignored                  -         0.068              -
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+--------------------------------------------------------------------
+Timing Corner     Skew Group    Min ID    PathID    Max ID    PathID
+--------------------------------------------------------------------
+SS:setup.early    clk/SDC       0.858       -       0.974       -
+-    min fma_inst/regm3/out_reg[137]/CLK
+-    max fma_inst/regm0/out_reg[97]/CLK
+SS:setup.late     clk/SDC       0.858       -       1.299       -
+-    min fma_inst/regm3/out_reg[137]/CLK
+-    max fma_inst/regm/out_reg[3]/CLK
+FF:hold.early     clk/SDC       0.388       -       0.457       -
+-    min in/data_reg_reg[64]/CLK
+-    max fma_inst/regm0/out_reg[104]/CLK
+FF:hold.late      clk/SDC       0.388       -       0.457       -
+-    min in/data_reg_reg[64]/CLK
+-    max fma_inst/regm0/out_reg[104]/CLK
+--------------------------------------------------------------------
+
+

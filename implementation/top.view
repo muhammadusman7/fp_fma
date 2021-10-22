@@ -1,0 +1,13 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_library_set -name TT -timing {LIB/sky130_fd_sc_hd__tt_025C_1v80.lib} -si {LIB/sky130_fd_sc_hd__tt_025C_1v80.lib}
+create_library_set -name FF -timing {LIB/sky130_fd_sc_hd__ff_n40C_1v76.lib} -si {LIB/sky130_fd_sc_hd__ff_n40C_1v76.lib}
+create_library_set -name SS -timing {LIB/sky130_fd_sc_hd__ss_100C_1v40.lib} -si {LIB/sky130_fd_sc_hd__ss_100C_1v40.lib}
+create_constraint_mode -name SDC -sdc_files {constraint.sdc}
+create_delay_corner -name TT -library_set {TT}
+create_delay_corner -name FF -library_set {FF}
+create_delay_corner -name SS -library_set {SS}
+create_analysis_view -name Typ -constraint_mode {SDC} -delay_corner {TT}
+create_analysis_view -name Slow -constraint_mode {SDC} -delay_corner {SS}
+create_analysis_view -name Fast -constraint_mode {SDC} -delay_corner {FF}
+set_analysis_view -setup {Slow} -hold {Fast}
